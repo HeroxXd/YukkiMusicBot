@@ -232,6 +232,10 @@ async def initiate_bot():
 home_text_pm = f"""Hello ,
 My name is {BOT_NAME}.
 A Telegram Music+Video Streaming bot with some useful features.
+[©](https://telegra.ph/file/9db5c4e563ac9ed868908.jpg) powerd by [Triads Network](t.me/triads_network) 
+I can play music/video on vc 
+If any problem then contact our support group
+Thanks for using me 🌱
 
 All commands can be used with: / """
 
@@ -373,7 +377,11 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name},
+        """ `Hᴇʏ Mʀ / Mʀs` {first_name},
+        [©](https://telegra.ph/file/9db5c4e563ac9ed868908.jpg) powerd by [Triads Network](t.me/triads_network) 
+I can play music/video on vc 
+If any problem then contact our support group
+Thanks for using me 🌱
 
 Click on the buttons for more information.
 
@@ -399,7 +407,12 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""Hello {query.from_user.first_name},
+    top_text = f""" `Hᴇʏ Mʀ / Mʀs` {query.from_user.first_name},
+    
+[©](https://telegra.ph/file/9db5c4e563ac9ed868908.jpg) powerd by [Triads Network](t.me/triads_network) 
+I can play music/video on vc 
+If any problem then contact our support group
+Thanks for using me 🌱
 
 Click on the buttons for more information.
 
