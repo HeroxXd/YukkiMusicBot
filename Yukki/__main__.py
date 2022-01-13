@@ -377,7 +377,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """ `Hᴇʏ Mʀ / Mʀs` {first_name},
+        """Hᴇʏ Mʀ / Mʀs {first_name},
         [©](https://telegra.ph/file/9db5c4e563ac9ed868908.jpg) powered by [Triads Network](t.me/triads_network) 
 I can play music/video on vc 
 If any problem then contact our support group
